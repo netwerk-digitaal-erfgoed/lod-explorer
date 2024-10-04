@@ -7,9 +7,7 @@ const cacheTTL = parseInt(process.env.CACHE_TTL) || 86400;
 
 const lodCache = new NodeCache({ stdTTL: cacheTTL });
 
-const omekaURL = "https://www.goudatijdmachine.nl/omeka/api";
-
-
+const omekaURL = process.env.OMEKA_ENDPOINT;
 
 async function getSparqlResult(
   arr: any[],
