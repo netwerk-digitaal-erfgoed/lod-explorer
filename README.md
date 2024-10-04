@@ -1,6 +1,6 @@
 # lod-explorer
 
-start the project:
+start the project:   
 Run `docker-compose up -d` to start a mongo server in docker.
 
 copy `.env.example` to `.env` and change accordingly.
