@@ -1,0 +1,46 @@
+{
+  "name": "lod-explorer-backend",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "dev": "npx nodemon --exec npx tsx index.ts",
+    "build": "tsc",
+    "test": "jest --detectOpenHandles --config=jest.config.ts"
+  },
+  "keywords": [],
+  "author": "Stefan Beuving",
+  "license": "EUPL",
+  "dependencies": {
+    "@types/express": "^4.17.19",
+    "@types/node": "^20.8.6",
+    "arrayify-stream": "^2.0.1",
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "fetch-sparql-endpoint": "^4.1.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.7.0",
+    "node-cache": "^5.1.2",
+    "nodemon": "^3.1.7",
+    "streamify-string": "^1.0.1",
+    "typescript": "^5.2.2",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.15",
+    "@types/jest": "^29.5.5",
+    "@types/streamify-string": "^1.0.2",
+    "@types/supertest": "^2.0.14",
+    "@types/validator": "^13.11.5",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^9.0.1",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "tsx": "^4.19.1"
+  }
+}

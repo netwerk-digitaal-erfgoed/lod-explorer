@@ -1,0 +1,14 @@
+{
+  "name": "lod-explorer",
+  "version": "1.0.0",
+
+  "scripts": {
+    "start": "concurrently  \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend"
+  },
+  "author": "Stefan Beuving",
+  "license": "EUPL",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
